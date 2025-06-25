@@ -14,3 +14,7 @@ This is a responsive personal portfolio website created using **HTML**, **CSS**,
 - 🔗 Navigation between pages
 
 ---
+## deployment
+Home: https://blockly-nine.vercel.app/
+
+About: https://blockly-nine.vercel.app/about.html
