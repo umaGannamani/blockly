@@ -1,0 +1,207 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body.light {
+    background: #fff;
+    color: #333;
+}
+
+body.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background: transparent;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logoimg{
+    color: #000000;
+    height: 25px;
+    width: 25px;
+    top: 59px;
+    left: 112px;
+}
+.heading{
+    width: 265px;
+    height: 29px;
+    top: 61px;
+    left: 167px;
+    font: Segoe UI;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.nav button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    min-height: calc(100vh - 100px);
+    flex-wrap: wrap;
+}
+
+.home-text {
+    max-width: 500px;
+}
+
+.home-text .hello {
+    color: #00bfff;
+    font-weight: bold;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+}
+
+.home-text h1 span {
+    color: #fdbb2d;
+}
+
+.home-text p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn.download {
+    background-color: #ff5722;
+}
+
+.btn.contact {
+    background-color: #3f51b5;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Home Image */
+.home-image {
+    position: relative;
+}
+
+.home-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.home-image .circle {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-color: #fdbb2d;
+    border-radius: 50%;
+    z-index: 1;
+    top: -15px;
+    left: -15px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    min-height: calc(100vh - 100px);
+    flex-wrap: wrap;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 200px;
+}
+
+.about-image .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fdbb2d;
+    transform: rotate(45deg);
+    top: -20px;
+    left: -20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .home, .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-image .circle {
+        top: -10px;
+        left: -10px;
+    }
+}
